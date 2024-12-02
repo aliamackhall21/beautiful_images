@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('portfolio_header_image.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        section {
+            padding: 2rem;
+        }
+        .textual, .visual, .procedural {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-width: 200px;
+            max-height: 120px;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .carousel img:hover {
+            transform: scale(1.1) rotate(3deg);
+        }
+        .carousel-captions {
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#textual">Textual AI</a>
+        <a href="#visual">Visual AI</a>
+        <a href="#procedural">Procedural AI</a>
+    </nav>
+    <section id="textual" class="textual">
+        <h2>Textual AI</h2>
+        <p>Explore projects and research involving Natural Language Processing (NLP), language generation, and sentiment analysis. Learn how AI can interpret and create human-like text.</p>
+    </section>
+    <section id="visual" class="visual">
+        <h2>Visual AI</h2>
+        <p>Discover visual AI applications such as image recognition, computer vision, and creative art generation. See how AI brings visual data to life.</p>
+        <div class="carousel">
+            <img src="carousel_image1.jpeg" alt="Vibrant Neural Network Design">
+            <img src="carousel_image2.jpeg" alt="Futuristic AI Technology">
+            <img src="carousel_image3.jpeg" alt="Artistic Generative AI Pattern">
+            <img src="carousel_image4.jpeg" alt="Robotics and AI Fusion">
+        </div>
+        <div class="carousel-captions">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </section>
+    <section id="procedural" class="procedural">
+        <h2>Procedural AI</h2>
+        <p>Dive into procedural AI techniques used in simulations, gaming, and generative design. Understand how AI creates dynamic and adaptive systems.</p>
+        <p>Procedural AI focuses on automating the creation of content, behaviors, and environments. This includes technologies like procedural terrain generation in games, algorithmic art, and simulations that replicate real-world systems. It is widely used in fields such as game development, virtual reality, and automated storytelling.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 AI Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
