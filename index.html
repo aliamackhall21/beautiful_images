@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #FFD700, #7CFC00); /* Colors inspired by the Bernedoodle images */
         }
         header {
             background-image: url('portfolio_header_image.jpeg');
@@ -42,32 +43,16 @@
             padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
         }
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            position: relative;
-            border-radius: 10px;
-            justify-content: center;
-            align-items: center;
-        }
-        .carousel img {
-            width: 100%;
-            height: auto;
+        .section-image {
+            max-width: 300px;
+            max-height: 200px;
             object-fit: cover;
-            max-width: 200px;
-            max-height: 120px;
-            margin: 0 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .carousel img:hover {
-            transform: scale(1.1) rotate(3deg);
-        }
-        .carousel-captions {
-            text-align: center;
-            margin-top: 0.5rem;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
         }
         footer {
             text-align: center;
@@ -92,25 +77,18 @@
     <section id="textual" class="textual">
         <h2>Textual AI</h2>
         <p>Explore projects and research involving Natural Language Processing (NLP), language generation, and sentiment analysis. Learn how AI can interpret and create human-like text.</p>
+        <img src="bernedoodle_image1.jpeg" alt="Bernedoodle playing in a park" class="section-image">
     </section>
     <section id="visual" class="visual">
         <h2>Visual AI</h2>
         <p>Discover visual AI applications such as image recognition, computer vision, and creative art generation. See how AI brings visual data to life.</p>
-        <div class="carousel">
-            <img src="carousel_image1.jpeg" alt="Vibrant Neural Network Design">
-            <img src="carousel_image2.jpeg" alt="Futuristic AI Technology">
-            <img src="carousel_image3.jpeg" alt="Artistic Generative AI Pattern">
-            <img src="carousel_image4.jpeg" alt="Robotics and AI Fusion">
-        </div>
-        <div class="carousel-captions">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
-        </div>
+        <img src="bernedoodle_image2.jpeg" alt="Bernedoodle sitting at home" class="section-image">
     </section>
     <section id="procedural" class="procedural">
         <h2>Procedural AI</h2>
         <p>Dive into procedural AI techniques used in simulations, gaming, and generative design. Understand how AI creates dynamic and adaptive systems.</p>
         <p>Procedural AI focuses on automating the creation of content, behaviors, and environments. This includes technologies like procedural terrain generation in games, algorithmic art, and simulations that replicate real-world systems. It is widely used in fields such as game development, virtual reality, and automated storytelling.</p>
+        <img src="bernedoodle_image3.jpeg" alt="Bernedoodle running outdoors" class="section-image">
     </section>
     <footer>
         <p>&copy; 2024 AI Portfolio. All Rights Reserved.</p>
